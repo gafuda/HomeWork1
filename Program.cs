@@ -128,9 +128,8 @@
 //  Console.WriteLine(N);
 
 // Задача 9
-//  Console.WriteLine("Введите трехзначное число ");
-//  Random rnd = new Random();
-//  int N = int.Parse(rnd.Next(10, 100));
+// Console.WriteLine("Введите число из отрезка:  ");
+//  int N = int.Parse(Console.ReadLine());
 //  int N1  = N % 100 / 10;
 //  int N2  = N % 10;
 //  if (N1 > N2) {
@@ -147,9 +146,9 @@
 // Console.WriteLine(N1 + "" + N2);
 
 //Задача 11
-// Console.WriteLine("Введите трехзначное число ");
+// Console.WriteLine("Введите первое число ");
 // float N1 = float.Parse(Console.ReadLine());
-// Console.WriteLine("Введите трехзначное число ");
+// Console.WriteLine("Введите второе число ");
 // float N2 = float.Parse(Console.ReadLine());
 
 // Console.WriteLine(N2 % N1);
@@ -162,24 +161,5 @@
     // int N2  = N1 % 10;
     // Console.WriteLine(N2);
 // } else {
-    // Console.WriteLine("------");
+    // Console.WriteLine("числа нет");
 // }
-
-
-// String[] na4 = {"Понедельник", "Понедельник", "Понедельник", "Понедельник", "Понедельник", "Суббота", "Воскресенье"};
-// Console.WriteLine("Введите число ");
-// int N1 = int.Parse(Console.ReadLine());
-
-// if(na4[N1 - 1] == "Суббота" | na4[N1 - 1] == "Воскресенье") {
-//     Console.WriteLine("------");
-// }
-
-Console.WriteLine("Введите число ");
-int N1 = int.Parse(Console.ReadLine());
-
-if (
-    (N1 % 10) == (N1 % 100000 / 10000) &
-    (N1 % 100 / 10) == (N1 % 10000 / 1000)
-) {
-    Console.WriteLine("------");
-}
